@@ -1,58 +1,80 @@
 <style>
-  .topnav {
-   
-  }
-    ul {
-   
-    }
+.header {
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px 15px;
+    display: block;
+}
   
-  .left {
+li {
     float: left;
-    list-style-type: none;
-    margin: 15px 10px;
-    padding: 0;
-  }
-  .right {
-    float: right;
-    list-style-type: none;
-    margin: 15px 10px;
-    padding: 0;
-  }
-  .search {
+    display: block;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.search {
       text-align: center;
       top: 50%;
-      bottom: 50%;
+      bottom: 700%;
       padding: 75px;
-    }
-.bottomnav {
-  
 }
+
+
+
+.footer {
+    background-color: #efefef;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+}
+
 </style>
-<html>  
-  <!--Top Nav Bar --> 
-  <div class ="topnav">
+<html>
+  <head>
+    <title> Google.com </title>
+  </head>
+  <body>
+    
+<!--Top Nav Bar --> 
+    
+  <div id ="header">
     <ul>
-      <li class="left"> About </li>
-      <li class="left"> Store </li>
-      <li class="right"> Gmail </li>
-      <li class="right"> Images </li>
+      <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> About </a></li>
+      <li><a href=https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US> Store </a></li>
+      <li style="float:right"><img src=https://lh3.googleusercontent.com/-zjAMhGMRGjc/AAAAAAAAAAI/AAAAAAAAAAA/AAKWJJPYirRwMZXhh52Mph1zXQrag-DOrw.CMID/s64-c/photo.jpg></li>
+        <li style="float:right">Google Apps</li>
+      <li style="float:right"><a href=https://www.google.com/imghp?hl=en&tab=wi&ogbl> Images </a></li>
+      <li style="float:right"><a href=https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox> Gmail </a></li>
     </ul>
-  </div>
+  </div><!-- end of header -->
+    
 <!-- Search -->
+    
   <div class="search">  
   <img alt="Google logo" src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png>
   <form action ="http://www.google.com/search.php">
     <input type ="search" name="search" />
     <input type ="submit" value="Search" />
   </form>
-    </div>
+    </div><!-- end of search -->
+    
 <!--Bottom Nav Bar -->
-   <div class ="bottomnav">
+    
+   <div class ="footer">
      <ul>
-       <li class="left"> Advertising </li>
-       <li class="left"> Business </li>
-       <li class="left"> How Google Works </li>
-       <li class="right"> Privacy </li>
-       <li class="right"> Terms </li>
-       <li class="right"> Settings </li>
+       <li><a href=https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1> Advertising </a></li>
+       <li><a href=https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none> Business </a></li>
+       <li><a href=https://www.google.com/search/howsearchworks/?fg=1> How Google Works </a></li>
+       <li style="float:right"><a href=https://policies.google.com/privacy?fg=1> Privacy </a></li>
+       <li style="float:right"><a href=https://policies.google.com/terms?fg=1> Terms </a></li>
+       <li style="float:right"><a href=https://www.google.com/preferences?hl=en&client=safari> Settings </a></li>
+  </div><!-- end fo footer -->
+       
+</body>
 </html>
